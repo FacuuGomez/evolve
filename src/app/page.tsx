@@ -14,7 +14,7 @@ import { DonutChartComponent } from '@/components/DonutChart';
 
 export default function Home() {
 	return (
-		<main className='flex bg-dark text-white min-h-screen max-w-screen flex-col items-center'>
+		<main className='flex bg-gradient-to-br from-[#11182e] to-[#1a2642] text-white min-h-screen max-w-screen flex-col items-center'>
 			<Navbar />
 
 			<section className='flex max-w-7xl h-screen w-full justify-between items-center'>

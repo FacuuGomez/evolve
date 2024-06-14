@@ -9,7 +9,7 @@ import evolve_icon from '../../../../public/assets/evolve-dark-2.png';
 
 const Login = () => {
 	return (
-		<section className='bg-dark text-white h-screen'>
+		<section className='bg-gradient-to-br from-[#11182e] to-[#1a2642] text-white h-screen'>
 			<nav className='flex justify-center py-2 px-4 w-screen font-medium fixed border-b-2 border-b-primary'>
 				<div className='flex w-full justify-between max-w-7xl'>
 					<div className='flex items-center'>
@@ -40,27 +40,24 @@ const Login = () => {
 				</div>
 			</nav>
 
-			<div className='grid place-content-end h-screen w-screen'>
-				<div className='grid place-items-center items-center h-screen'>
-					<div className='grid place-items-center'>
-						<h3 className='font-bold text-4xl'>Registrarse en Evolve</h3>
+			<div className='grid place-content-center h-screen w-screen'>
+				<div className='grid place-items-center bg-darkslow p-16 rounded-xl'>
+					<h3 className='font-bold text-4xl'>Registrarse en Evolve</h3>
 
-						<button className='flex justify-center mt-8 py-4 w-80 border-2 border-secundary hover:border-secundary_light font-medium bg-secundary rounded-lg hover:bg-secundary_light transition-all duration-200'>
-							<FontAwesomeIcon className='w-6 mr-2' icon={faGoogle} />
-							Continuar con Google
-						</button>
-						<button className='flex justify-center mt-4 py-4 w-80 border-2 font-medium border-white rounded-lg hover:bg-white hover:text-black transition-all duration-300'>
-							<FontAwesomeIcon className='w-6 mr-2' icon={faEnvelope} />
-							Continuar con Email
-						</button>
-					</div>
-				</div>
+					<button className='flex justify-center mt-8 py-4 w-80 border-2 border-secundary hover:border-secundary_light font-medium bg-secundary rounded-lg hover:bg-secundary_light transition-all duration-200'>
+						<FontAwesomeIcon className='w-6 mr-2' icon={faGoogle} />
+						Continuar con Google
+					</button>
 
-				<footer className='flex justify-center w-screen items-center h-28 border-t-2 border-t-primary'>
-					<a className='h-6 text-blue-500 hover:underline cursor-pointer'>
-						¿Ya tenés cuenta? Iniciar sesión
+					<button className='flex justify-center mt-4 py-4 w-80 border-2 font-medium border-white rounded-lg hover:bg-white hover:text-black transition-all duration-300'>
+						<FontAwesomeIcon className='w-6 mr-2' icon={faEnvelope} />
+						Continuar con Email
+					</button>
+
+					<a className='h-6 mt-8 text-blue-500 hover:underline cursor-pointer'>
+						¿No tenés cuenta? Registrate
 					</a>
-				</footer>
+				</div>
 			</div>
 		</section>
 	);

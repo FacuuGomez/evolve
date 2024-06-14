@@ -1,5 +1,5 @@
 import type { Config } from 'tailwindcss';
-import colors from 'tailwindcss/colors';
+import colors, { transparent } from 'tailwindcss/colors';
 
 const config: Config = {
 	content: [
@@ -70,7 +70,8 @@ const config: Config = {
 						DEFAULT: colors.gray[800],
 					},
 					ring: {
-						DEFAULT: colors.gray[800],
+						DEFAULT: transparent,
+						// DEFAULT: colors.gray[800],
 					},
 					content: {
 						subtle: colors.gray[600],
