@@ -12,33 +12,65 @@ export const TableComponent = () => (
 		<Table>
 			<TableHead>
 				<TableRow>
-					<TableHeaderCell>Name</TableHeaderCell>
-					<TableHeaderCell className='text-right'>
-						Monsters Slayed
+					<TableHeaderCell>PESO</TableHeaderCell>
+					<TableHeaderCell className='text-center'>
+						REPETICIONES
 					</TableHeaderCell>
-					<TableHeaderCell>Region</TableHeaderCell>
-					<TableHeaderCell>Status</TableHeaderCell>
+					<TableHeaderCell className='text-center'>% DE 1RM</TableHeaderCell>
+					<TableHeaderCell className='text-right'>
+						MEJOR RENDIMIENTO
+					</TableHeaderCell>
 				</TableRow>
 			</TableHead>
 
 			<TableBody>
 				<TableRow>
-					<TableCell>Wilhelm Tell</TableCell>
-					<TableCell className='text-right'>1</TableCell>
-					<TableCell>Uri, Schwyz, Unterwalden</TableCell>
-					<TableCell>National Hero</TableCell>
+					<TableCell>85 kg</TableCell>
+					<TableCell className='text-center'>2</TableCell>
+					<TableCell className='text-center'>85%</TableCell>
+					<TableCell className='text-right'>
+						<p>85 kgs (x2)</p>
+						<p className='opacity-70'>LUN. 10 DE JUN.</p>
+					</TableCell>
 				</TableRow>
 				<TableRow>
-					<TableCell>The Witcher</TableCell>
-					<TableCell className='text-right'>129</TableCell>
-					<TableCell>Kaedwen</TableCell>
-					<TableCell>Legend</TableCell>
+					<TableCell>80 kg</TableCell>
+					<TableCell className='text-center'>3</TableCell>
+					<TableCell className='text-center'>80%</TableCell>
+					<TableCell className='text-right'>
+						<p>80 kgs (x3)</p>
+						<p className='opacity-70'>JUE. 6 DE JUN.</p>
+					</TableCell>
 				</TableRow>
+
 				<TableRow>
-					<TableCell>Mizutsune</TableCell>
-					<TableCell className='text-right'>82</TableCell>
-					<TableCell>Japan</TableCell>
-					<TableCell>N/A</TableCell>
+					<TableCell>75 kg</TableCell>
+					<TableCell className='text-center'>4</TableCell>
+					<TableCell className='text-center'>75%</TableCell>
+					<TableCell className='text-right'>
+						<p>75 kgs (x4)</p>
+						<p className='opacity-70'>LUN. 3 DE JUN.</p>
+					</TableCell>
+				</TableRow>
+
+				<TableRow>
+					<TableCell>70 kg</TableCell>
+					<TableCell className='text-center'>5</TableCell>
+					<TableCell className='text-center'>70%</TableCell>
+					<TableCell className='text-right'>
+						<p>70 kgs (x5)</p>
+						<p className='opacity-70'>JUE. 30 DE MAY.</p>
+					</TableCell>
+				</TableRow>
+
+				<TableRow>
+					<TableCell>65 kg</TableCell>
+					<TableCell className='text-center'>6</TableCell>
+					<TableCell className='text-center'>65%</TableCell>
+					<TableCell className='text-right'>
+						<p>65 kgs (x6)</p>
+						<p className='opacity-70'>LUN. 27 DE MAY.</p>
+					</TableCell>
 				</TableRow>
 			</TableBody>
 		</Table>

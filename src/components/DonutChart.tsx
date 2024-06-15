@@ -4,40 +4,48 @@ import { DonutChart } from '@tremor/react';
 
 const datahero = [
 	{
-		name: 'Noche Holding AG',
-		value: 9800,
+		name: 'Pecho',
+		value: 85,
 	},
 	{
-		name: 'Rain Drop AG',
-		value: 4567,
+		name: 'Espalda',
+		value: 85,
 	},
 	{
-		name: 'Push Rail AG',
-		value: 3908,
+		name: 'Piernas',
+		value: 80,
 	},
 	{
-		name: 'Flow Steal AG',
-		value: 2400,
+		name: 'Triceps',
+		value: 77.5,
 	},
 	{
-		name: 'Tiny Loop Inc.',
-		value: 2174,
+		name: 'Biceps',
+		value: 77.5,
 	},
 	{
-		name: 'Anton Resorts Holding',
-		value: 1398,
+		name: 'Hombros',
+		value: 75,
+	},
+	{
+		name: 'Abdominales',
+		value: 40,
+	},
+	{
+		name: 'Antebrazos',
+		value: 55,
 	},
 ];
 
 const dataFormatter = (number: number) =>
-	`$ ${Intl.NumberFormat('us').format(number).toString()}`;
+	`${Intl.NumberFormat('us').format(number).toString()} %`;
 
 export const DonutChartComponent = () => (
 	<>
 		<div className='mx-auto space-y-12'>
 			<div className='space-y-3'>
 				<span className='text-center block font-mono text-tremor-default text-tremor-content dark:text-dark-tremor-content'>
-					donut variant 1
+					Músculos
 				</span>
 				<div className='flex justify-center'>
 					<DonutChart
@@ -50,7 +58,7 @@ export const DonutChartComponent = () => (
 			</div>
 			<div className='space-y-3'>
 				<span className='text-center block font-mono text-tremor-default text-tremor-content dark:text-dark-tremor-content'>
-					pie variant
+					Ejercicios
 				</span>
 				<div className='flex justify-center'>
 					<DonutChart

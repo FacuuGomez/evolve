@@ -5,7 +5,7 @@ import { faMoon } from '@fortawesome/free-solid-svg-icons';
 import { bebas_neue } from '../../public/fonts/fonts';
 import evolve_icon from '../../public/assets/evolve-dark-2.png';
 
-const Navbar = () => {
+export const Navbar = () => {
 	return (
 		<nav className='flex justify-center py-2 px-4 w-screen font-medium fixed border-b-2 border-b-primary bg-dark z-10'>
 			<div className='flex w-full justify-between max-w-7xl'>
@@ -48,5 +48,3 @@ const Navbar = () => {
 		</nav>
 	);
 };
-
-export default Navbar;
