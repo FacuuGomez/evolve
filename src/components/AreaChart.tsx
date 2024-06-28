@@ -48,7 +48,8 @@ export function AreaChartComponent(): JSX.Element {
 			data={chartdata}
 			index='date'
 			categories={['Peso']}
-			colors={['indigo']}
+			colors={['#00fefc']}
+			// colors={['indigo']}
 			valueFormatter={dataFormatter}
 			yAxisWidth={60}
 			onValueChange={(v) => console.log(v)}

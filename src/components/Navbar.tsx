@@ -32,7 +32,7 @@ export const Navbar = () => {
 					</li>
 
 					<li className='hover:text-primary cursor-pointer'>
-						<Link href='/'>Contacto</Link>
+						<Link href='/contact'>Contacto</Link>
 					</li>
 
 					<hr className='border border-primary rounded h-8 ml-4' />
