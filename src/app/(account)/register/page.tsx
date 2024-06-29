@@ -26,16 +26,16 @@ const Login = () => {
 					<ul className='flex items-center '>
 						<button className='w-4 mr-4 cursor-pointer'>
 							<FontAwesomeIcon
-								className=' text-primary hover:opacity-70'
+								className=' text-primary hover:opacity-70 active:opacity-70'
 								icon={faMoon}
 							/>
 						</button>
 
-						<li className='mr-4 hover:text-primary cursor-pointer'>
+						<li className='mr-4 hover:text-primary active:text-primary cursor-pointer'>
 							<Link href='/contact'>Contacto</Link>
 						</li>
 						<hr className='border border-primary rounded h-8 mr-4' />
-						<li className='hover:text-primary cursor-pointer'>
+						<li className='hover:text-primary active:text-primary cursor-pointer'>
 							<Link href='/login'>Iniciar sesión</Link>
 						</li>
 					</ul>

@@ -57,13 +57,13 @@ const Contact = () => {
 						</div>
 
 						<ul className='flex justify-center mt-6'>
-							<li className='inline-flex items-center font-semibold opacity-80 hover:opacity-100 cursor-pointer'>
+							<li className='inline-flex items-center font-semibold opacity-80 hover:opacity-100 active:opacity-100 cursor-pointer'>
 								<FontAwesomeIcon className='w-7 mr-2' icon={faGlobe} />
 								Geekhound
 							</li>
 							<li className='flex'>
 								<a
-									className='inline-flex items-center font-semibold opacity-80 hover:opacity-100 cursor-pointer mx-4'
+									className='inline-flex items-center font-semibold opacity-80 hover:opacity-100 active:opacity-100 cursor-pointer mx-4'
 									href='https://www.instagram.com/geekhound/'
 									target='_blank'
 								>
@@ -71,7 +71,7 @@ const Contact = () => {
 									Instagram
 								</a>
 							</li>
-							<li className='inline-flex items-center font-semibold opacity-80 hover:opacity-100 cursor-pointer'>
+							<li className='inline-flex items-center font-semibold opacity-80 hover:opacity-100 active:opacity-100 cursor-pointer'>
 								<FontAwesomeIcon className='w-7 mr-2' icon={faXTwitter} />
 								Twitter
 							</li>

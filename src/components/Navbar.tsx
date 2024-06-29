@@ -31,16 +31,16 @@ export const Navbar = () => {
 						</button>
 					</li>
 
-					<li className='hover:text-primary cursor-pointer'>
+					<li className='hover:text-primary active:text-primary cursor-pointer'>
 						<Link href='/contact'>Contacto</Link>
 					</li>
 
 					<hr className='border border-primary rounded h-8 ml-4' />
 
-					<li className='mx-4 hover:text-primary cursor-pointer'>
+					<li className='mx-4 hover:text-primary active:text-primary cursor-pointer'>
 						<Link href='/login'>Iniciar sesión</Link>
 					</li>
-					<li className='hover:text-primary cursor-pointer'>
+					<li className='hover:text-primary active:text-primary cursor-pointer'>
 						<Link href='/register'>Registrarse</Link>
 					</li>
 				</ul>

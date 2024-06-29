@@ -110,21 +110,21 @@ export default function Home() {
 						<ul className='flex items-center'>
 							<li>
 								<FontAwesomeIcon
-									className='w-7 opacity-80 hover:opacity-100 cursor-pointer'
+									className='w-7 opacity-80 hover:opacity-100 active:opacity-100 cursor-pointer'
 									icon={faGlobe}
 								/>
 							</li>
 							<li>
 								<a href='https://www.instagram.com/geekhound/' target='_blank'>
 									<FontAwesomeIcon
-										className='w-7 mx-4 opacity-80 hover:opacity-100 cursor-pointer'
+										className='w-7 mx-4 opacity-80 hover:opacity-100 active:opacity-100 cursor-pointer'
 										icon={faInstagram}
 									/>
 								</a>
 							</li>
 							<li>
 								<FontAwesomeIcon
-									className='w-7 opacity-80 hover:opacity-100 cursor-pointer'
+									className='w-7 opacity-80 hover:opacity-100 active:opacity-100 cursor-pointer'
 									icon={faXTwitter}
 								/>
 							</li>

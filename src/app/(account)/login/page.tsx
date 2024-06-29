@@ -31,11 +31,11 @@ const Login = () => {
 							/>
 						</button>
 
-						<li className='mr-4 hover:text-primary cursor-pointer'>
+						<li className='mr-4 hover:text-primary active:text-primary cursor-pointer'>
 							<Link href='/contact'>Contacto</Link>
 						</li>
 						<hr className='border border-primary rounded h-8 mr-4' />
-						<li className='hover:text-primary cursor-pointer'>
+						<li className='hover:text-primary active:text-primary cursor-pointer'>
 							<Link href='/register'>Registrarse</Link>
 						</li>
 					</ul>
