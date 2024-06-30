@@ -25,7 +25,7 @@ export const Navbar = () => {
 					<li className='flex'>
 						<button className='w-4 mr-4 cursor-pointer'>
 							<FontAwesomeIcon
-								className=' text-primary hover:opacity-70'
+								className=' text-primary hover:opacity-80 active:opacity-60'
 								icon={faMoon}
 							/>
 						</button>

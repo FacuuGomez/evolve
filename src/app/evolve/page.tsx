@@ -36,7 +36,7 @@ export default function Evolve() {
 						<li className='hover:text-primary cursor-pointer text-3xl font-bold'>
 							<Link href='/calendar'>
 								<FontAwesomeIcon
-									className='w-6 text-white hover:text-primary active:text-primary mr-6'
+									className='w-6 text-white hover:text-primary active:opacity-70 mr-6'
 									icon={faCalendar}
 								/>
 							</Link>
@@ -45,7 +45,7 @@ export default function Evolve() {
 						<li className='flex'>
 							<Link href='/settings'>
 								<FontAwesomeIcon
-									className='w-6 text-white hover:text-primary active:text-primary'
+									className='w-6 text-white hover:text-primary active:opacity-70'
 									icon={faGear}
 								/>
 							</Link>
@@ -55,62 +55,88 @@ export default function Evolve() {
 			</nav>
 
 			{/* <section className='flex bg-gradient-to-br from-[#11182e] to-[#1a2642] text-white h-screen max-w-screen flex-col items-center'> */}
-			<div className='h-full w-full max-w-7xl pt-20'>
-				<aside className='mt-10'>
+			<div className='py-20 min-h-screen w-full max-w-7xl'>
+				<div className='pt-10'>
 					<div>
 						<h2 className='font-bold text-2xl'>Entrenamiento</h2>
 						<p className='opacity-60'>Hoy, 29 de Junio</p>
 					</div>
 
 					{/* <div> */}
-					<ul className='grid grid-cols-7 mt-4'>
-						<li>
-							<p>LUN</p>
-							<p>24</p>
+					<ul className='grid grid-cols-7 mt-6'>
+						<li className='flex items-center'>
+							<div className='text-center'>
+								<p className='text-sm opacity-60'>LUN</p>
+								<p className='text-xl font-semibold mt-1 px-2 py-1'>24</p>
+							</div>
 						</li>
-						<li>
-							<p>MAR</p>
-							<p>25</p>
+						<li className='flex items-center'>
+							<div className='text-center'>
+								<p className='text-sm opacity-60'>MAR</p>
+								<p className='text-xl font-semibold mt-1 rounded-xl px-2 py-1'>
+									25
+								</p>
+							</div>
 						</li>
-						<li>
-							<p>MIE</p>
-							<p>26</p>
+						<li className='flex items-center'>
+							<div className='text-center'>
+								<p className='text-sm opacity-60'>MIE</p>
+								<p className='text-xl font-semibold mt-1 rounded-xl px-2 py-1'>
+									26
+								</p>
+							</div>
 						</li>
-						<li>
-							<p>JUE</p>
-							<p>27</p>
+						<li className='flex items-center'>
+							<div className='text-center'>
+								<p className='text-sm opacity-60'>JUE</p>
+								<p className='text-xl font-semibold mt-1 rounded-xl px-2 py-1'>
+									27
+								</p>
+							</div>
 						</li>
-						<li>
-							<p>VIE</p>
-							<p>28</p>
+						<li className='flex items-center'>
+							<div className='text-center'>
+								<p className='text-sm opacity-60'>VIE</p>
+								<p className='text-xl font-semibold mt-1 rounded-xl px-2 py-1'>
+									28
+								</p>
+							</div>
 						</li>
-						<li>
-							<p>SAB</p>
-							<p>29</p>
+						<li className='flex items-center'>
+							<div className='text-center'>
+								<p className='text-sm opacity-60 '>SAB</p>
+								<p className='text-xl font-semibold mt-1 rounded-xl px-2 py-1 bg-primary  text-black'>
+									29
+								</p>
+							</div>
 						</li>
-						<li>
-							<p>DOM</p>
-							<p>30</p>
+						<li className='flex items-center'>
+							<div className='text-center'>
+								<p className='text-sm opacity-60'>DOM</p>
+								<p className='text-xl font-semibold mt-1 rounded-xl px-2 py-1'>
+									30
+								</p>
+							</div>
 						</li>
 					</ul>
 					{/* </div> */}
+				</div>
 
-					<div className='grid grid-cols-6 gap-2 mt-6'>
-						<button className='flex justify-center col-start-1 col-end-4 bg-slate-700 hover:bg-slate-600 active:bg-slate-700 p-3 rounded-xl'>
-							Selecciona una rutina
-							<FontAwesomeIcon
-								className='w-6 pl-2 text-white'
-								icon={faChevronDown}
-							/>
-						</button>
-						<button className='col-start-5 hover:bg-slate-600 active:bg-slate-700 p-3 rounded-xl'>
-							Rutinas
-						</button>
-					</div>
-				</aside>
+				<div className='grid grid-cols-6 gap-2 my-10'>
+					<button className='flex justify-center col-start-1 col-end-4 bg-slate-700 hover:bg-slate-600 active:bg-slate-700 p-3 rounded-xl'>
+						Selecciona una rutina
+						<FontAwesomeIcon
+							className='w-6 pl-2 text-white'
+							icon={faChevronDown}
+						/>
+					</button>
+					<button className='col-start-5 hover:bg-slate-600 active:bg-slate-700 p-3 rounded-xl'>
+						Rutinas
+					</button>
+				</div>
 
-				<main>
-					<div className='flex-row justify-center text-center mt-10'>
+				<main className='flex justify-center text-center'>
+					<div className='flex-row justify-center items-center'>
 						<h3 className={`${bebas_neue.className} text-2xl mb-2`}>
 							¡BIENVENIDO A EVOLVE!
 						</h3>
@@ -120,33 +146,33 @@ export default function Evolve() {
 							seleccionando una rutina o agregá un ejecicio.
 						</p>
 
-						<button className='flex w-full justify-center hover:text-primary active:text-primary cursor-pointer font-medium'>
+						<button className='flex w-full justify-center hover:text-primary active:opacity-70 cursor-pointer font-medium'>
 							<FontAwesomeIcon className='w-6 pr-2' icon={faCirclePlus} />
 							Agregar ejercicio
 						</button>
 					</div>
 				</main>
 			</div>
+			{/* </section> */}
 
-			<aside className='fixed bottom-0 flex justify-center bg-dark w-full max-w-7xl h-32 rounded-xl mb-2'>
+			<aside className='fixed bottom-0 flex justify-center bg-dark w-full max-w-7xl h-16 rounded-xl mb-2'>
 				<div className='grid place-items-center grid-cols-3 gap-2 w-1/2'>
 					<FontAwesomeIcon
-						className='w-10 text-white hover:text-primary active:text-primary cursor-pointer'
+						className='w-9 text-white hover:text-primary active:opacity-70 cursor-pointer'
 						icon={faDumbbell}
 					/>
 					{/* <hr /> */}
 					<FontAwesomeIcon
-						className='w-8 text-white hover:text-primary active:text-primary cursor-pointer'
+						className='w-7 text-white hover:text-primary active:opacity-70  cursor-pointer'
 						icon={faChartLine}
 					/>
 					{/* <hr /> */}
 					<FontAwesomeIcon
-						className='w-7 text-white hover:text-primary active:text-primary cursor-pointer'
+						className='w-6 text-white hover:text-primary active:opacity-70  cursor-pointer'
 						icon={faUser}
 					/>
 				</div>
 			</aside>
-			{/* </section> */}
 		</div>
 	);
 }
