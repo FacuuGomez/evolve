@@ -9,7 +9,7 @@ import evolve_icon from '../../../public/assets/evolve-dark-2.png';
 const Contact = () => {
 	return (
 		<section className='bg-gradient-to-br from-[#11182e] to-[#1a2642] text-white h-screen'>
-			<nav className='flex justify-center py-2 px-4 w-screen font-medium fixed border-b-2 border-b-primary'>
+			<nav className='flex justify-center py-2 px-4 w-screen font-medium fixed border-b-2 border-b-primary bg-dark'>
 				<div className='flex w-full justify-between max-w-7xl'>
 					<div className='flex items-center'>
 						<Link href='/'>

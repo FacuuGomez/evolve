@@ -157,20 +157,26 @@ export default function Evolve() {
 
 			<aside className='fixed bottom-0 flex justify-center bg-dark w-full max-w-7xl h-16 rounded-xl mb-2'>
 				<div className='grid place-items-center grid-cols-3 gap-2 w-1/2'>
-					<FontAwesomeIcon
-						className='w-9 text-white hover:text-primary active:opacity-70 cursor-pointer'
-						icon={faDumbbell}
-					/>
+					<Link href='/evolve'>
+						<FontAwesomeIcon
+							className='w-9 text-white hover:text-primary active:opacity-70 cursor-pointer'
+							icon={faDumbbell}
+						/>
+					</Link>
 					{/* <hr /> */}
-					<FontAwesomeIcon
-						className='w-7 text-white hover:text-primary active:opacity-70  cursor-pointer'
-						icon={faChartLine}
-					/>
+					<Link href='/stats'>
+						<FontAwesomeIcon
+							className='w-7 text-white hover:text-primary active:opacity-70  cursor-pointer'
+							icon={faChartLine}
+						/>
+					</Link>
 					{/* <hr /> */}
-					<FontAwesomeIcon
-						className='w-6 text-white hover:text-primary active:opacity-70  cursor-pointer'
-						icon={faUser}
-					/>
+					<Link href='/profile'>
+						<FontAwesomeIcon
+							className='w-6 text-white hover:text-primary active:opacity-70  cursor-pointer'
+							icon={faUser}
+						/>
+					</Link>
 				</div>
 			</aside>
 		</div>
