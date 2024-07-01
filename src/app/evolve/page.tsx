@@ -19,7 +19,7 @@ export default function Evolve() {
 			<nav className='flex justify-center py-2 px-4 w-screen font-medium fixed border-b-2 border-b-primary bg-dark z-10'>
 				<div className='flex w-full justify-between max-w-7xl'>
 					<div className='flex items-center'>
-						<Link href='/'>
+						<Link href='/evolve'>
 							<Image
 								src={evolve_icon}
 								className='w-14 h-14 ml-1 cursor-pointer'
@@ -56,7 +56,7 @@ export default function Evolve() {
 
 			{/* <section className='flex bg-gradient-to-br from-[#11182e] to-[#1a2642] text-white h-screen max-w-screen flex-col items-center'> */}
 			<div className='py-20 min-h-screen w-full max-w-7xl'>
-				<div className='pt-10'>
+				<div className='pt-4'>
 					<div>
 						<h2 className='font-bold text-2xl'>Entrenamiento</h2>
 						<p className='opacity-60'>Hoy, 29 de Junio</p>
@@ -155,7 +155,7 @@ export default function Evolve() {
 			</div>
 			{/* </section> */}
 
-			<aside className='fixed bottom-0 flex justify-center bg-dark w-full max-w-7xl h-16 rounded-xl mb-2'>
+			<aside className='fixed bottom-0 flex justify-center bg-dark w-full max-w-7xl h-16 rounded-xl mb-2 shadow-[0px_0px_5px_2px_] shadow-primary'>
 				<div className='grid place-items-center grid-cols-3 gap-2 w-1/2'>
 					<Link href='/evolve'>
 						<FontAwesomeIcon

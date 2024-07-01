@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import evolve_icon from '../../../public/assets/evolve-dark-2.png';
+import { bebas_neue } from '../../../public/fonts/fonts';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
 	faGear,
@@ -11,7 +12,6 @@ import {
 	faUser,
 } from '@fortawesome/free-solid-svg-icons';
 import { faCalendar } from '@fortawesome/free-regular-svg-icons';
-import { bebas_neue } from '../../../public/fonts/fonts';
 import user_image from '../../../public/assets/user-image.jpeg';
 
 export default function Profile() {
@@ -20,7 +20,7 @@ export default function Profile() {
 			<nav className='flex justify-center py-2 px-4 w-screen font-medium fixed border-b-2 border-b-primary bg-dark z-10'>
 				<div className='flex w-full justify-between max-w-7xl'>
 					<div className='flex items-center'>
-						<Link href='/'>
+						<Link href='/evolve'>
 							<Image
 								src={evolve_icon}
 								className='w-14 h-14 ml-1 cursor-pointer'
@@ -29,7 +29,7 @@ export default function Profile() {
 						</Link>
 
 						<h2 className={`${bebas_neue.className} text-3xl ml-4 text-white`}>
-							EVOLVE
+							Perfil
 						</h2>
 					</div>
 
@@ -99,7 +99,7 @@ export default function Profile() {
 				</div>
 			</section>
 
-			<aside className='fixed bottom-0 flex justify-center bg-dark w-full max-w-7xl h-16 rounded-xl mb-2'>
+			<aside className='fixed bottom-0 flex justify-center bg-dark w-full max-w-7xl h-16 rounded-xl mb-2 shadow-[0px_0px_5px_2px_] shadow-primary'>
 				<div className='grid place-items-center grid-cols-3 gap-2 w-1/2'>
 					<Link href='/evolve'>
 						<FontAwesomeIcon
